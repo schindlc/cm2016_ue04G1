@@ -103,18 +103,27 @@ public class MarkdownTextEnhancer {
 	}
 	
 	public static String createHeader4(String textToHeader){
-		// insert meaning full code
-				return null;
+		if(headingHelper == null){
+			headingHelper = new HeadingHelper();
+		}
+			
+					return headingHelper.createHeader4(textToHeader);
 	}
 	
 	public static String createHeader5(String textToHeader){
-		// insert meaning full code
-				return null;
+		if(headingHelper == null){
+			headingHelper = new HeadingHelper();
+		}
+			
+					return headingHelper.createHeader5(textToHeader);
 	}
 	
 	public static String createHeader6(String textToHeader){
-		// insert meaning full code
-				return null;
+		if(headingHelper == null){
+			headingHelper = new HeadingHelper();
+		}
+			
+					return headingHelper.createHeader6(textToHeader);
 	}
 	
 	// Style operations
