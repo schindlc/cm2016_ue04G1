@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ListHelper {
 
-	public Object createNestedList(ArrayList<String> itemList, int i) {
+	public String createNestedList(ArrayList<String> itemList, int i) {
 		return this.makeListNested(this.createUnOrderedList(itemList), i);
 	}
 

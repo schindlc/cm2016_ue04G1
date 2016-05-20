@@ -1,5 +1,6 @@
 package at.fhj.swd.confmana.md;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import at.fhj.swd.confmana.md.manipulate.HeadingHelper;
@@ -27,123 +28,111 @@ public class MarkdownTextEnhancer {
 	private static QuotingHelper quotingHelper;
 	private static StyleHelper styleHelper;
 	
+	static {
+		headingHelper = new HeadingHelper();
+		linkHelper = new LinkHelper();
+		listHelper = new ListHelper();
+		miscHelper = new MiscHelper();
+		quotingHelper = new QuotingHelper();
+		styleHelper = new StyleHelper();
+	}
+	
 	// Link operation
 	
 	/**
-	 * please add a meaningful documentation for this method
-	 * @param linkDescription ... what is this?
-	 * @param url ... what is that?
-	 * @return ... what is returned?
+	 * @param linkDescription ... description of the link
+	 * @param url ... url of the link
+	 * @return ... link definition created by this function
 	 */
 	public static String createMdLink(String linkDescription, String url){
-		// insert meaning full code
-		return null;
+		return linkHelper.createMdLink(linkDescription, url);
 	}
 	
 	// List operations
 	
 	public static String createOrderedList(List<String> listItems){
-		// insert meaning full code
-				return null;
+		return listHelper.createOrderedList(new ArrayList<>(listItems));
 	}
 	
 	public static String createUnOrderedList(List<String> listItems){
-		// insert meaning full code
-				return null;
+		return listHelper.createUnOrderedList(new ArrayList<>(listItems));
 	}
 	
 	public static String createNestedList(List<String>listItems, int intendLevel){
-		// insert meaning full code
-				return null;
+		return listHelper.createNestedList(new ArrayList<>(listItems), intendLevel);
 	}
 	
 	public static String makeListNested(String markdownListString, int intendLevel){
-		// insert meaning full code
-				return null;
+		return listHelper.makeListNested(markdownListString, intendLevel);
 	}
 
 	public static String createTaskList(List<String>listItems){
-		// insert meaning full code
-				return null;
+		return listHelper.createTaskList(new ArrayList<>(listItems));
 	}
 	
 	// Quoting operations
 	public static String quoteTextLine(String textLineToQuote){
-		// insert meaning full code
-				return null;
+		return quotingHelper.quoteTextLine(textLineToQuote);
 	}
 	
 	public static String quoteCodeLine(String codeLineToQuote){
-		// insert meaning full code
-				return null;
+		return quotingHelper.quoteCodeLine(codeLineToQuote);
 	}
 	
 	public static String quoteCodeBlock(String codeBlockToQuote){
-		// insert meaning full code
-				return null;
+		return quotingHelper.quoteCodeBlock(codeBlockToQuote);
 	}
 	
 	// Header operations
 	public static String createHeader1(String textToHeader){
-		// insert meaning full code
-				return null;
+		return headingHelper.createHeader1(textToHeader);
 	}
 	
 	public static String createHeader2(String textToHeader){
-		// insert meaning full code
-				return null;
+		return headingHelper.createHeader2(textToHeader);
 	}
 	
 	public static String createHeader3(String textToHeader){
-		// insert meaning full code
-				return null;
+		return headingHelper.createHeader3(textToHeader);
 	}
 	
 	public static String createHeader4(String textToHeader){
-		// insert meaning full code
-				return null;
+		return headingHelper.createHeader4(textToHeader);
 	}
 	
 	public static String createHeader5(String textToHeader){
-		// insert meaning full code
-				return null;
+		return headingHelper.createHeader5(textToHeader);
 	}
 	
 	public static String createHeader6(String textToHeader){
-		// insert meaning full code
-				return null;
+		return headingHelper.createHeader6(textToHeader);
 	}
 	
 	// Style operations
 	
 	public static String makeBold(String textLineToMakeBold){
-		// insert meaning full code
-				return null;
+		return styleHelper.makeBold(textLineToMakeBold);
 	}
 	
 	public static String makeItalic(String textLineToMakeItalic){
-		// insert meaning full code
-				return null;
+		return styleHelper.makeItalic(textLineToMakeItalic);
 	}
 	
 	public static String makeStrikeThrough(String textLineToStrikeThrough){
-		// insert meaning full code
-				return null;
+		return styleHelper.makeStrikeThrough(textLineToStrikeThrough);
 	}
 	
 	// Misc operations
 	
 	public static String reverseString(String textToinverse){
-		return null;
+		return miscHelper.reverseString(textToinverse);
 	}
 	
-	public static String CapitalizeString(String textToCapoitalize){
-		return null;
+	public static String capitalizeString(String textToCapoitalize){
+		return miscHelper.CapitalizeString(textToCapoitalize);
 	}
 	
 	public static String rot13(String textToRot13){
-		return null;
+		return miscHelper.rot13(textToRot13);
 	}
-	
-	
 }
