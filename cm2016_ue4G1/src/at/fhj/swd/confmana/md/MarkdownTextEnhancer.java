@@ -86,7 +86,11 @@ public class MarkdownTextEnhancer {
 	// Header operations
 	public static String createHeader1(String textToHeader){
 		// insert meaning full code
-				return null;
+	if(headingHelper == null){
+		headingHelper = new HeadingHelper();
+	}
+		
+				return headingHelper.createHeader1(textToHeader);
 	}
 	
 	public static String createHeader2(String textToHeader){
