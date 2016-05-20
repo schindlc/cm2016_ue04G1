@@ -1,4 +1,4 @@
-package at.fhj.swd.confmana.md;
+					package at.fhj.swd.confmana.md;
 
 import java.util.List;
 
@@ -53,8 +53,8 @@ public class MarkdownTextEnhancer {
 	}
 	
 	public static String createNestedList(List<String>listItems, int intendLevel){
-		// insert meaning full code
-				return null;
+		ListHelper lh = new ListHelper();
+				return lh.toString();
 	}
 	
 	public static String makeListNested(String markdownListString, int intendLevel){
