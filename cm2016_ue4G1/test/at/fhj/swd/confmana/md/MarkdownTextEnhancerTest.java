@@ -19,7 +19,7 @@ public class MarkdownTextEnhancerTest {
 		itemList.add("item2");
 		itemList.add("item3");
 	}
-	
+	/*
 	@Test
 	public void testCreateMdLink() {
 		String expected = "[link description](linkUrl)";
@@ -77,7 +77,7 @@ public class MarkdownTextEnhancerTest {
 		assertEquals(expected, MarkdownTextEnhancer.quoteTextLine("  "));
 		
 	}
-	
+	*/
 	@Test
 	public void testQuoteCodeLine() {
 		String expected = "`public void empty(){}`";
@@ -88,7 +88,7 @@ public class MarkdownTextEnhancerTest {
 		assertEquals(expected,MarkdownTextEnhancer.quoteCodeLine("  "));
 		
 	}
-
+	/*
 	@Test
 	public void testQuoteCodeBlock() {
 		String expected = "```\npublic void empty(){\n//empty as is\n}\n```";
@@ -166,7 +166,7 @@ public class MarkdownTextEnhancerTest {
 		expected = "    ";
 		assertEquals(expected,MarkdownTextEnhancer.makeStrikeThrough("    "));
 	}
-
+	*/
 	/*
 	@Test
 	public void testReverseString() {

@@ -2,12 +2,12 @@ package at.fhj.swd.confmana.md;
 
 import java.util.List;
 
-import at.fhj.swd.confmana.md.manipulate.HeadingHelper;
-import at.fhj.swd.confmana.md.manipulate.LinkHelper;
-import at.fhj.swd.confmana.md.manipulate.ListHelper;
+//import at.fhj.swd.confmana.md.manipulate.HeadingHelper;
+//import at.fhj.swd.confmana.md.manipulate.LinkHelper;
+//import at.fhj.swd.confmana.md.manipulate.ListHelper;
 import at.fhj.swd.confmana.md.manipulate.MiscHelper;
 import at.fhj.swd.confmana.md.manipulate.QuotingHelper;
-import at.fhj.swd.confmana.md.manipulate.StyleHelper;
+//import at.fhj.swd.confmana.md.manipulate.StyleHelper;
 
 /**
  * The purpose of this class is to ease the creation of markdown documents
@@ -20,12 +20,12 @@ public class MarkdownTextEnhancer {
 
 	// Members must be instantiated
 	
-	private static HeadingHelper headingHelper;
-	private static LinkHelper linkHelper;
-	private static ListHelper listHelper;
-	private static MiscHelper miscHelper;
+	//private static HeadingHelper headingHelper;
+	//private static LinkHelper linkHelper;
+	//private static ListHelper listHelper;
+	//private static MiscHelper miscHelper;
 	private static QuotingHelper quotingHelper;
-	private static StyleHelper styleHelper;
+	//private static StyleHelper styleHelper;
 	
 	// Link operation
 	
@@ -73,8 +73,7 @@ public class MarkdownTextEnhancer {
 	}
 	
 	public static String quoteCodeLine(String codeLineToQuote){
-		// insert meaning full code
-				return null;
+		return QuotingHelper.quoteCodeLine(codeLineToQuote);
 	}
 	
 	public static String quoteCodeBlock(String codeBlockToQuote){
