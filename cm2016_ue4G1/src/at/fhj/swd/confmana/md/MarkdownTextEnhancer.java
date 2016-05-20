@@ -35,9 +35,8 @@ public class MarkdownTextEnhancer {
 	 * @param url ... what is that?
 	 * @return ... what is returned?
 	 */
-	public static String createMdLink(String linkDescription, String url){
-		// insert meaning full code
-		return null;
+	public static String createMdLink(String linkDescription, String url) {
+		return linkHelper.createMdLink(linkDescription, url);
 	}
 	
 	// List operations
