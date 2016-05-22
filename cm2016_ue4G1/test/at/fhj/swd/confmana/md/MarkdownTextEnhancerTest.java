@@ -144,7 +144,7 @@ public class MarkdownTextEnhancerTest {
 		expected = "   ";
 		assertEquals(expected, MarkdownTextEnhancer.makeBold("   "));
 	}
-	
+	*/
 	@Test
 	public void testMakeItalic() {
 		String expected = "_This text is italicized._";
@@ -166,7 +166,7 @@ public class MarkdownTextEnhancerTest {
 		expected = "    ";
 		assertEquals(expected,MarkdownTextEnhancer.makeStrikeThrough("    "));
 	}
-	*/
+	
 	/*
 	@Test
 	public void testReverseString() {

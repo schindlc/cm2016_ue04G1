@@ -8,7 +8,7 @@ public class QuotingHelper {
 		if (line == null) {
 			throw new IllegalArgumentException();
 		}
-		if (line.contains("(){}")) {
+		if (line.trim().length() > 0) {
 			return "`" + line + "`";
 		} else {
 			return line;
