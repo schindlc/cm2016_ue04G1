@@ -2,6 +2,7 @@ package at.fhj.swd.confmana.md;
 
 import java.util.List;
 
+import at.fhj.swd.confmana.md.manipulate.ListHelper;
 //import at.fhj.swd.confmana.md.manipulate.HeadingHelper;
 //import at.fhj.swd.confmana.md.manipulate.LinkHelper;
 //import at.fhj.swd.confmana.md.manipulate.ListHelper;
@@ -63,7 +64,11 @@ public class MarkdownTextEnhancer {
 
 	public static String createTaskList(List<String>listItems){
 		// insert meaning full code
-				return null;
+		if(listItems == null){
+			throw new IllegalArgumentException();
+		}else{
+			return ListHelper.createTaskList(listItems);
+		}
 	}
 	
 	// Quoting operations
