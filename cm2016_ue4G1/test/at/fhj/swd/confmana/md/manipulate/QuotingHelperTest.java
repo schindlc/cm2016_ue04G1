@@ -34,8 +34,8 @@ public class QuotingHelperTest {
 */	
 	@Test
 	public void testQuoteCodeLine() {
-		String expected = "`public void empty(){}`";
-		assertEquals(expected,quotingHelper.quoteCodeLine("public void empty(){}"));
+		String expected = "`public void empty(somevar){somecode}`";
+		assertEquals(expected,quotingHelper.quoteCodeLine("public void empty(somevar){somecode}"));
 		expected ="";
 		assertEquals(expected,quotingHelper.quoteCodeLine(""));
 		expected ="  ";

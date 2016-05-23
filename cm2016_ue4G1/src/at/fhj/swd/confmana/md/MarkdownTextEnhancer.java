@@ -8,7 +8,8 @@ import at.fhj.swd.confmana.md.manipulate.ListHelper;
 //import at.fhj.swd.confmana.md.manipulate.ListHelper;
 import at.fhj.swd.confmana.md.manipulate.MiscHelper;
 import at.fhj.swd.confmana.md.manipulate.QuotingHelper;
-//import at.fhj.swd.confmana.md.manipulate.StyleHelper;
+import at.fhj.swd.confmana.md.manipulate.StyleHelper;
+
 
 /**
  * The purpose of this class is to ease the creation of markdown documents
@@ -26,7 +27,7 @@ public class MarkdownTextEnhancer {
 	//private static ListHelper listHelper;
 	//private static MiscHelper miscHelper;
 	private static QuotingHelper quotingHelper;
-	//private static StyleHelper styleHelper;
+	private static StyleHelper styleHelper;
 	
 	// Link operation
 	
@@ -138,13 +139,11 @@ public class MarkdownTextEnhancer {
 	}
 	
 	public static String makeItalic(String textLineToMakeItalic){
-		// insert meaning full code
-				return null;
+		return StyleHelper.makeItalic(textLineToMakeItalic);
 	}
 	
 	public static String makeStrikeThrough(String textLineToStrikeThrough){
-		// insert meaning full code
-				return null;
+		return StyleHelper.makeStrikeThrough(textLineToStrikeThrough);
 	}
 	
 	// Misc operations

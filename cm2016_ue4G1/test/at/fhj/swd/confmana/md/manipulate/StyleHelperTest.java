@@ -13,7 +13,7 @@ public class StyleHelperTest {
 	public void setUp() throws Exception {
 		styleHelper = new StyleHelper();
 	}
-
+/*
 	@Test
 	public void testMakeBold() {
 		String expected = "**this is bold text.**";
@@ -29,7 +29,7 @@ public class StyleHelperTest {
 	public void testMakeBoldNull() {
 		styleHelper.makeBold(null);
 	}
-	
+	*/
 	@Test
 	public void testMakeItalic() {
 		String expected = "_This text is italicized._";
