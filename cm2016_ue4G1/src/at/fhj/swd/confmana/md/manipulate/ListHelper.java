@@ -11,6 +11,9 @@ public class ListHelper {
 		if (listItems == null) {
 			throw new IllegalArgumentException();
 		}
+		if (intendlevel < 0) {
+			throw new IllegalArgumentException();
+		}
 		for (String item : listItems) {
 			for (int i = 0; i <= n; i++) {
 				if (i == 0) {
@@ -21,10 +24,6 @@ public class ListHelper {
 
 			}
 			sb.append("* ").append(item).append("\n");
-
-			if (intendlevel < 0) {
-				throw new IllegalArgumentException();
-			}
 
 		}
 		return sb.toString();
