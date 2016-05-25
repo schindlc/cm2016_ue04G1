@@ -3,15 +3,29 @@ package at.fhj.swd.confmana.md.manipulate;
 import java.util.List;
 
 public class ListHelper {
-	public String createNestedList(List<String> listItems, int intendlevel){
+
+	public static String createNestedList(List<String> listItems, int intendlevel) {
 		StringBuffer sb = new StringBuffer();
-		int n = 2* intendlevel;
-		
-		for(String item : listItems){
+		int n = 2 * intendlevel;
+
+		if (listItems == null) {
+			throw new IllegalArgumentException();
+		}
+		for (String item : listItems) {
 			for (int i = 0; i <= n; i++) {
-				sb.append(" ");
+				if (i == 0) {
+					sb.append("");
+				} else {
+					sb.append(" ");
+				}
+
 			}
-			sb.append("*").append(item).append("\n");
+			sb.append("* ").append(item).append("\n");
+
+			if (intendlevel < 0) {
+				throw new IllegalArgumentException();
+			}
+
 		}
 		return sb.toString();
 	}
