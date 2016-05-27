@@ -14,4 +14,16 @@ public class QuotingHelper {
 			return line;
 		}
 	}
+
+	public String quoteTextLine(String quoteTextLine){
+		if(quoteTextLine == null){
+			throw new IllegalArgumentException();
+		}
+		if(quoteTextLine.trim().length()==0){
+			return quoteTextLine;
+	
+			
+		}
+		return "> "+ quoteTextLine + "\n"; 
+	}
 }
