@@ -73,9 +73,8 @@ public class MarkdownTextEnhancer {
 	}
 	
 	// Quoting operations
-	public static String quoteTextLine(String textLineToQuote){
-		// insert meaning full code
-				return null;
+	public static String quoteTextLine(String quoteTextLine){
+			return quoteTextLine;
 	}
 	
 	public static String quoteCodeLine(String codeLineToQuote){
