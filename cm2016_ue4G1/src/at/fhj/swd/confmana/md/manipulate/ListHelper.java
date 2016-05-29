@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 package at.fhj.swd.confmana.md.manipulate;
 
 import java.util.List;
 
 public class ListHelper {
 
-	@SuppressWarnings("null")
 	public static String createTaskList(List<String> itemList) {
 		String itemTask = "";
 		
@@ -14,8 +12,6 @@ public class ListHelper {
 		} 
 		return itemTask;
 	}
-	
-
 
 	public static String createNestedList(List<String> listItems, int intendlevel) {
 		StringBuffer sb = new StringBuffer();
@@ -41,18 +37,6 @@ public class ListHelper {
 		}
 		return sb.toString();
 	}
-
-
-	@SuppressWarnings("null")
-	public static String createTaskList(List<String> itemList) {
-		String itemTask = "";
-		
-		for(String item : itemList){
-			itemTask += "- [ ] "+item + "\n";
-		} 
-		return itemTask;
-	}
-	
 
 	public String createOrderedList(List<String> listItems){
 		String orderedList = "";

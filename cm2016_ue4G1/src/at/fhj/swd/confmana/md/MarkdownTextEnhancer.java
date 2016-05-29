@@ -22,7 +22,6 @@ public class MarkdownTextEnhancer {
 	// Members must be instantiated
 	
 	private static HeadingHelper headingHelper;
-	private static createHeader headingHelper;
 	private static LinkHelper linkHelper;
 	private static ListHelper listHelper;
 	private static MiscHelper miscHelper;
