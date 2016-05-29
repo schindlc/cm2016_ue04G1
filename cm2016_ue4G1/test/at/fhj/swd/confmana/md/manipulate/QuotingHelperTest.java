@@ -14,7 +14,7 @@ public class QuotingHelperTest {
 		quotingHelper = new QuotingHelper();
 		
 	}
-/*
+
 	@Test
 	public void testQuoteTextLine() {
 		String expected = "> This text line should be quoted in the style of a text email.\n";
@@ -31,7 +31,7 @@ public class QuotingHelperTest {
 		quotingHelper.quoteTextLine(null);
 	}
 	
-*/	
+
 	@Test
 	public void testQuoteCodeLine() {
 		String expected = "`public void empty(somevar){somecode}`";
@@ -47,7 +47,7 @@ public class QuotingHelperTest {
 	public void testQuoteCodeLineNull() {
 		quotingHelper.quoteCodeLine(null);
 	}
-/*
+
 	@Test
 	public void testQuoteCodeBlock() {
 		String expected = "```\npublic void empty(){\n//empty as is\n}\n```";
@@ -60,5 +60,5 @@ public class QuotingHelperTest {
 	public void testQuoteCodeBlockNull() {
 		quotingHelper.quoteCodeBlock(null);
 	}
-*/
+
 }
