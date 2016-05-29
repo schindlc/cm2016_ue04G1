@@ -22,10 +22,11 @@ public class MarkdownTextEnhancer {
 
 	// Members must be instantiated
 	
-	//private static HeadingHelper headingHelper;
-	//private static LinkHelper linkHelper;
-	//private static ListHelper listHelper;
-	//private static MiscHelper miscHelper;
+	private static HeadingHelper headingHelper;
+	private static createHeader headingHelper;
+	private static LinkHelper linkHelper;
+	private static ListHelper listHelper;
+	private static MiscHelper miscHelper;
 	private static QuotingHelper quotingHelper;
 	private static StyleHelper styleHelper;
 	
@@ -102,8 +103,7 @@ public class MarkdownTextEnhancer {
 	}
 	
 	public static String createHeader3(String textToHeader){
-		// insert meaning full code
-				return null;
+				return "### " + textToHeader;
 	}
 	
 	public static String createHeader4(String textToHeader){
