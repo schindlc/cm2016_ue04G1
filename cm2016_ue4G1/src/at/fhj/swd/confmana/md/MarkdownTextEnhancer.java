@@ -44,6 +44,12 @@ public class MarkdownTextEnhancer {
 	
 	public static String createOrderedList(List<String> listItems){
 		// insert meaning full code
+		String orderedList = "";
+		for(int i = 0; i < listItems.size(); i++) {
+			orderedList += "1. ";
+			orderedList += listItems.get(i);
+			orderedList += "\n";
+		}
 				return null;
 	}
 	
