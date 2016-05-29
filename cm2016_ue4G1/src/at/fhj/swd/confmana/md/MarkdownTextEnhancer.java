@@ -2,10 +2,9 @@ package at.fhj.swd.confmana.md;
 
 import java.util.List;
 
+import at.fhj.swd.confmana.md.manipulate.HeadingHelper;
+import at.fhj.swd.confmana.md.manipulate.LinkHelper;
 import at.fhj.swd.confmana.md.manipulate.ListHelper;
-//import at.fhj.swd.confmana.md.manipulate.HeadingHelper;
-//import at.fhj.swd.confmana.md.manipulate.LinkHelper;
-//import at.fhj.swd.confmana.md.manipulate.ListHelper;
 import at.fhj.swd.confmana.md.manipulate.MiscHelper;
 import at.fhj.swd.confmana.md.manipulate.QuotingHelper;
 import at.fhj.swd.confmana.md.manipulate.StyleHelper;
