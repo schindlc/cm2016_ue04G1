@@ -5,6 +5,11 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
+<<<<<<< HEAD
+=======
+import at.fhj.swd.confmana.md.HeadingHelper;
+
+>>>>>>> master
 public class HeadingHelperTest {
 	private HeadingHelper headingHelper;
 	

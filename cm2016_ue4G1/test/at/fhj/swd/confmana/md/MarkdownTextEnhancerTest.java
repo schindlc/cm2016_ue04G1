@@ -19,7 +19,11 @@ public class MarkdownTextEnhancerTest {
 		itemList.add("item2");
 		itemList.add("item3");
 	}
+<<<<<<< HEAD
 	
+=======
+	/*
+>>>>>>> master
 	@Test
 	public void testCreateMdLink() {
 		String expected = "[link description](linkUrl)";
@@ -77,7 +81,11 @@ public class MarkdownTextEnhancerTest {
 		assertEquals(expected, MarkdownTextEnhancer.quoteTextLine("  "));
 		
 	}
+<<<<<<< HEAD
 	
+=======
+	*/
+>>>>>>> master
 	@Test
 	public void testQuoteCodeLine() {
 		String expected = "`public void empty(){}`";
@@ -88,7 +96,11 @@ public class MarkdownTextEnhancerTest {
 		assertEquals(expected,MarkdownTextEnhancer.quoteCodeLine("  "));
 		
 	}
+<<<<<<< HEAD
 	
+=======
+	/*
+>>>>>>> master
 	@Test
 	public void testQuoteCodeBlock() {
 		String expected = "```\npublic void empty(){\n//empty as is\n}\n```";
@@ -144,7 +156,11 @@ public class MarkdownTextEnhancerTest {
 		expected = "   ";
 		assertEquals(expected, MarkdownTextEnhancer.makeBold("   "));
 	}
+<<<<<<< HEAD
 	
+=======
+	*/
+>>>>>>> master
 	@Test
 	public void testMakeItalic() {
 		String expected = "_This text is italicized._";
@@ -167,7 +183,11 @@ public class MarkdownTextEnhancerTest {
 		assertEquals(expected,MarkdownTextEnhancer.makeStrikeThrough("    "));
 	}
 	
+<<<<<<< HEAD
 	
+=======
+	/*
+>>>>>>> master
 	@Test
 	public void testReverseString() {
 		fail("Not yet implemented");
@@ -182,6 +202,10 @@ public class MarkdownTextEnhancerTest {
 	public void testRot13() {
 		fail("Not yet implemented");
 	}
+<<<<<<< HEAD
 	 
+=======
+	 */
+>>>>>>> master
 
 }
