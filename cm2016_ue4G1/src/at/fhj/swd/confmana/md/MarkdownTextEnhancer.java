@@ -2,7 +2,7 @@ package at.fhj.swd.confmana.md;
 
 import java.util.List;
 
-import at.fhj.swd.confmana.md.manipulate.HeadingHelper;
+import at.fhj.swd.confmana.md.manipulate.createHeader;
 import at.fhj.swd.confmana.md.manipulate.LinkHelper;
 import at.fhj.swd.confmana.md.manipulate.ListHelper;
 import at.fhj.swd.confmana.md.manipulate.MiscHelper;
@@ -20,7 +20,7 @@ public class MarkdownTextEnhancer {
 
 	// Members must be instantiated
 	
-	private static HeadingHelper headingHelper;
+	private static createHeader headingHelper;
 	private static LinkHelper linkHelper;
 	private static ListHelper listHelper;
 	private static MiscHelper miscHelper;
@@ -95,8 +95,7 @@ public class MarkdownTextEnhancer {
 	}
 	
 	public static String createHeader3(String textToHeader){
-		// insert meaning full code
-				return null;
+				return "### " + textToHeader;
 	}
 	
 	public static String createHeader4(String textToHeader){
