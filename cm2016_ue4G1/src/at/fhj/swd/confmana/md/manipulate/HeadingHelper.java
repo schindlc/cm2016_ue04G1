@@ -1,4 +1,4 @@
-package at.fhj.swd.confmana.md;
+package at.fhj.swd.confmana.md.manipulate;
 
 public class HeadingHelper {
 	public String createHeader1 (String textToHeader){
