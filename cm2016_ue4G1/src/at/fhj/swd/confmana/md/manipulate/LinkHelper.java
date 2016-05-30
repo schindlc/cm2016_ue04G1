@@ -17,4 +17,11 @@ public class LinkHelper {
 		}
 		return "[" + desc + "](" + url + ")";
 	}
+
+
+	public String createMdLink(String desc, String url) {
+		if(desc==null||url==null) throw new IllegalArgumentException();
+		return "["+desc+"]("+url+")";
+	}
+
 }
