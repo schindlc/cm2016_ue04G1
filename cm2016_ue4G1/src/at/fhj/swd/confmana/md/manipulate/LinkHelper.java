@@ -19,6 +19,15 @@ public class LinkHelper {
 	}
 
 
+<<<<<<< HEAD
 	
 }
 
+=======
+	public String createMdLink(String desc, String url) {
+		if(desc==null||url==null) throw new IllegalArgumentException();
+		return "["+desc+"]("+url+")";
+	}
+
+}
+>>>>>>> p0intR-master

@@ -27,6 +27,10 @@ public class QuotingHelper {
 		return "> "+ quoteTextLine + "\n"; 
 	}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> p0intR-master
 	private MiscHelper mh;
 	
 	public QuotingHelper(){
@@ -37,5 +41,15 @@ public class QuotingHelper {
 		return this.mh.quoteBy(string, "```\n", "\n```", "```\n```");
 	}
 
+<<<<<<< HEAD
 	
+=======
+	public String quoteCodeLine(String string) {
+		return this.mh.quoteBy(string, "`", "`");
+	}
+
+	public String quoteTextLine(String string) {
+		return this.mh.quoteBy(string, "> ", "\n");
+	}
+>>>>>>> p0intR-master
 }

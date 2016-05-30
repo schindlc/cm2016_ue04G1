@@ -1,6 +1,10 @@
 package at.fhj.swd.confmana.md;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+import java.util.ArrayList;
+>>>>>>> p0intR-master
 import java.util.List;
 
 import at.fhj.swd.confmana.md.manipulate.HeadingHelper;
@@ -29,13 +33,21 @@ public class MarkdownTextEnhancer {
 	private static QuotingHelper quotingHelper;
 	private static StyleHelper styleHelper;
 	
+	static {
+		headingHelper = new HeadingHelper();
+		linkHelper = new LinkHelper();
+		listHelper = new ListHelper();
+		miscHelper = new MiscHelper();
+		quotingHelper = new QuotingHelper();
+		styleHelper = new StyleHelper();
+	}
+	
 	// Link operation
 	
 	/**
-	 * please add a meaningful documentation for this method
-	 * @param linkDescription ... what is this?
-	 * @param url ... what is that?
-	 * @return ... what is returned?
+	 * @param linkDescription ... description of the link
+	 * @param url ... url of the link
+	 * @return ... link definition created by this function
 	 */
 	public static String createMdLink(String linkDescription, String url) {
 		return linkHelper.createMdLink(linkDescription, url);
@@ -64,6 +76,10 @@ public class MarkdownTextEnhancer {
 	}
 
 	public static String createTaskList(List<String>listItems){
+<<<<<<< HEAD
+=======
+		
+>>>>>>> p0intR-master
 		if(listItems == null){
 			throw new IllegalArgumentException();
 		}else{
@@ -86,7 +102,12 @@ public class MarkdownTextEnhancer {
 	
 	// Header operations
 	public static String createHeader1(String textToHeader){
+<<<<<<< HEAD
 		if(headingHelper == null){
+=======
+	
+	if(headingHelper == null){
+>>>>>>> p0intR-master
 		headingHelper = new HeadingHelper();
 	}
 		
@@ -101,7 +122,9 @@ public class MarkdownTextEnhancer {
 					return headingHelper.createHeader2(textToHeader);
 		}
 	public static String createHeader3(String textToHeader){
-				return "### " + textToHeader;
+			//	return "### " + textToHeader;
+
+		return headingHelper.createHeader3(textToHeader);
 	}
 	
 	public static String createHeader4(String textToHeader){
