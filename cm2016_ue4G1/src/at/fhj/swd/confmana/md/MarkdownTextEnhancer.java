@@ -58,8 +58,10 @@ public class MarkdownTextEnhancer {
 	}
 	
 	public static String makeListNested(String markdownListString, int intendLevel){
-		// insert meaning full code
-				return null;
+		if (listHelper == null){
+			listHelper = new ListHelper();
+		}
+		return listHelper.makeListNested(markdownListString, intendLevel);
 	}
 
 	public static String createTaskList(List<String>listItems){
