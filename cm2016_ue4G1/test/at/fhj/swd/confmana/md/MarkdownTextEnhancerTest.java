@@ -1,7 +1,6 @@
 package at.fhj.swd.confmana.md;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 import java.util.ArrayList;
 
@@ -168,19 +167,23 @@ public class MarkdownTextEnhancerTest {
 	}
 	
 
+
 	@Test
 	public void testReverseString() {
-		fail("Not yet implemented");
+		String expected = "abcdefghi";
+		assertEquals(expected,MarkdownTextEnhancer.reverseString("ihgfedcba"));
 	}
 
 	@Test
 	public void testCapitalizeString() {
-		fail("Not yet implemented");
+		String expected = "ABCDEFGHI";
+		assertEquals(expected,MarkdownTextEnhancer.capitalizeString("abcdefghi"));
 	}
 
 	@Test
 	public void testRot13() {
-		fail("Not yet implemented");
+		String expected = "nopqrstuv";
+		assertEquals(expected,MarkdownTextEnhancer.rot13("abcdefghi"));
 	}
 
 }

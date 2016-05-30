@@ -1,5 +1,6 @@
 package at.fhj.swd.confmana.md;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import at.fhj.swd.confmana.md.manipulate.HeadingHelper;
@@ -43,13 +44,11 @@ public class MarkdownTextEnhancer {
 	// List operations
 	
 	public static String createOrderedList(List<String> listItems){
-		// insert meaning full code
-				return null;
+		return listHelper.createOrderedList(new ArrayList<>(listItems));
 	}
 	
 	public static String createUnOrderedList(List<String> listItems){
-		// insert meaning full code
-				return null;
+		return listHelper.createUnOrderedList(new ArrayList<>(listItems));
 	}
 
 	public static String createNestedList(List<String> listItems, int intendLevel) {
@@ -65,7 +64,6 @@ public class MarkdownTextEnhancer {
 	}
 
 	public static String createTaskList(List<String>listItems){
-		// insert meaning full code
 		if(listItems == null){
 			throw new IllegalArgumentException();
 		}else{
@@ -83,14 +81,12 @@ public class MarkdownTextEnhancer {
 	}
 	
 	public static String quoteCodeBlock(String codeBlockToQuote){
-		// insert meaning full code
-				return null;
+		return quotingHelper.quoteCodeBlock(codeBlockToQuote);
 	}
 	
 	// Header operations
 	public static String createHeader1(String textToHeader){
-		// insert meaning full code
-	if(headingHelper == null){
+		if(headingHelper == null){
 		headingHelper = new HeadingHelper();
 	}
 		
@@ -135,8 +131,7 @@ public class MarkdownTextEnhancer {
 	// Style operations
 	
 	public static String makeBold(String textLineToMakeBold){
-		// insert meaning full code
-				return null;
+		return styleHelper.makeBold(textLineToMakeBold);
 	}
 	
 	public static String makeItalic(String textLineToMakeItalic){
@@ -150,15 +145,15 @@ public class MarkdownTextEnhancer {
 	// Misc operations
 	
 	public static String reverseString(String textToinverse){
-		return null;
+		return miscHelper.reverseString(textToinverse);
 	}
 	
-	public static String CapitalizeString(String textToCapoitalize){
-		return null;
+	public static String capitalizeString(String textToCapoitalize){
+		return miscHelper.CapitalizeString(textToCapoitalize);
 	}
 	
 	public static String rot13(String textToRot13){
-		return null;
+		return miscHelper.rot13(textToRot13);
 	}
 	
 	

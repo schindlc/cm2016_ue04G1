@@ -71,5 +71,12 @@ public class HeadingHelper {
 		else
 			return Text;
 	}
+
+	private static final String HEADER = "######";
 	
+	public String createHeader(String string, int i) {
+		if(i<0||i>HEADER.length()||string==null) throw new IllegalArgumentException();
+		return HEADER.substring(0, i)+(string.length()>0?" "+string.trim():"");
+	}
+
 }

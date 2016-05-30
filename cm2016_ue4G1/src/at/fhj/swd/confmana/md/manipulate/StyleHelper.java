@@ -33,4 +33,6 @@ public class StyleHelper {
 		
 		return "**" + newString + "**";
 	}
+
+	
 }
