@@ -61,7 +61,7 @@ public class HeadingHelper {
 	}
 
 	public void setText(String Text) {
-		this.text = "###"+Text;
+		this.text = Text;
 	}
 	
 	public String createHeader3(String Text)
