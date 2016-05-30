@@ -20,4 +20,17 @@ public class StyleHelper {
 		}
 		return textLineToStrikeThrough;
 	}
+
+	public String makeBold(String text) {		
+		if(text == null) {
+			throw new IllegalArgumentException("Null object is not allowed.");
+		}
+		
+		String newString = text.trim();
+		if(newString.length() == 0) {
+			return text;
+		}
+		
+		return "**" + newString + "**";
+	}
 }
