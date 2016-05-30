@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package at.fhj.swd.confmana.md.manipulate;
 
 import java.util.List;
@@ -34,21 +33,10 @@ public class ListHelper {
 
 			}
 			sb.append("* ").append(item).append("\n");
-
-=======
-package at.fhj.swd.confmana.md.manipulate;
-
-import java.util.List;
-
-public class ListHelper {
-	public String createOrderedList(List<String> listItems){
-		StringBuffer sb = new StringBuffer();
-		for (String item : listItems){
-			sb.append("* ").append(item).append("\n");
 		}
 		return sb.toString();
-	}
-	
+		}
+
 	public String makeListNested(String markdownListString, int intendLevel){
 		if (markdownListString == null) {
 			throw new IllegalArgumentException();
@@ -63,12 +51,12 @@ public class ListHelper {
 				sb.append("  ");
 			}
 			sb.append(StringArray[i]).append("\n");
->>>>>>> 132653fa0b1baffafe700e294a83b74e71b94e07
+
 		}
 		return sb.toString();
 	}
 
-<<<<<<< HEAD
+
 	public String createOrderedList(List<String> listItems){
 		String orderedList = "";
 		System.out.println("Test");
@@ -85,6 +73,4 @@ public class ListHelper {
 		return orderedList;
 	}
 	
-=======
->>>>>>> 132653fa0b1baffafe700e294a83b74e71b94e07
 }
