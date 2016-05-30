@@ -98,10 +98,12 @@ public class MarkdownTextEnhancer {
 	}
 	
 	public static String createHeader2(String textToHeader){
-		// insert meaning full code
-				return null;
-	}
-	
+		if(headingHelper == null){
+			headingHelper = new HeadingHelper();
+		}
+			
+					return headingHelper.createHeader2(textToHeader);
+		}
 	public static String createHeader3(String textToHeader){
 				return "### " + textToHeader;
 	}
