@@ -15,22 +15,19 @@ public class QuotingHelper {
 		}
 	}
 
-	public String quoteTextLine(String quoteTextLine){
-		if(quoteTextLine == null){
-			throw new IllegalArgumentException();
-		}
-		if(quoteTextLine.trim().length()==0){
-			return quoteTextLine;
-	
-			
-		}
-		return "> "+ quoteTextLine + "\n"; 
-	}
+//	public String quoteTextLine(String quoteTextLine){
+//		if(quoteTextLine == null){
+//			throw new IllegalArgumentException();
+//		}
+//		if(quoteTextLine.trim().length()==0){
+//			return quoteTextLine;
+//	
+//			
+//		}
+//		return "> "+ quoteTextLine + "\n"; 
+//	}
 
-<<<<<<< HEAD
-=======
 
->>>>>>> p0intR-master
 	private MiscHelper mh;
 	
 	public QuotingHelper(){
@@ -41,15 +38,13 @@ public class QuotingHelper {
 		return this.mh.quoteBy(string, "```\n", "\n```", "```\n```");
 	}
 
-<<<<<<< HEAD
-	
-=======
-	public String quoteCodeLine(String string) {
-		return this.mh.quoteBy(string, "`", "`");
-	}
+
+//	public String quoteCodeLine(String string) {
+//		return this.mh.quoteBy(string, "`", "`");
+//	}
 
 	public String quoteTextLine(String string) {
 		return this.mh.quoteBy(string, "> ", "\n");
 	}
->>>>>>> p0intR-master
+
 }

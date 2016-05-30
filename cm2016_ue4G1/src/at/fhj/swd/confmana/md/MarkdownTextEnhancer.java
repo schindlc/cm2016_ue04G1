@@ -1,10 +1,6 @@
 package at.fhj.swd.confmana.md;
 
-<<<<<<< HEAD
 import java.util.ArrayList;
-=======
-import java.util.ArrayList;
->>>>>>> p0intR-master
 import java.util.List;
 
 import at.fhj.swd.confmana.md.manipulate.HeadingHelper;
@@ -64,22 +60,20 @@ public class MarkdownTextEnhancer {
 	}
 
 	public static String createNestedList(List<String> listItems, int intendLevel) {
-		ListHelper lh = new ListHelper();
-			return lh.toString();
-	}
-	
+//		ListHelper lh = new ListHelper();
+//			return lh.toString();
+		if (listHelper == null){
+		}
+		return ListHelper.createNestedList(listItems, intendLevel);
+			}
+
 	public static String makeListNested(String markdownListString, int intendLevel){
 		if (listHelper == null){
-			listHelper = new ListHelper();
 		}
 		return listHelper.makeListNested(markdownListString, intendLevel);
 	}
 
 	public static String createTaskList(List<String>listItems){
-<<<<<<< HEAD
-=======
-		
->>>>>>> p0intR-master
 		if(listItems == null){
 			throw new IllegalArgumentException();
 		}else{
@@ -89,7 +83,7 @@ public class MarkdownTextEnhancer {
 	
 	// Quoting operations
 	public static String quoteTextLine(String quoteTextLine){
-			return quoteTextLine;
+			return quotingHelper.quoteTextLine(quoteTextLine);
 	}
 	
 	public static String quoteCodeLine(String codeLineToQuote){
@@ -102,15 +96,10 @@ public class MarkdownTextEnhancer {
 	
 	// Header operations
 	public static String createHeader1(String textToHeader){
-<<<<<<< HEAD
+
 		if(headingHelper == null){
-=======
-	
-	if(headingHelper == null){
->>>>>>> p0intR-master
 		headingHelper = new HeadingHelper();
-	}
-		
+		}
 				return headingHelper.createHeader1(textToHeader);
 	}
 	
@@ -118,9 +107,9 @@ public class MarkdownTextEnhancer {
 		if(headingHelper == null){
 			headingHelper = new HeadingHelper();
 		}
-			
-					return headingHelper.createHeader2(textToHeader);
-		}
+			return headingHelper.createHeader2(textToHeader);
+	}
+	
 	public static String createHeader3(String textToHeader){
 			//	return "### " + textToHeader;
 

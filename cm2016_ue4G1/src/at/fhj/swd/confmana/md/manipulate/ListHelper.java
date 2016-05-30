@@ -3,7 +3,6 @@ package at.fhj.swd.confmana.md.manipulate;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class ListHelper {
 
 	public static String createTaskList(List<String> itemList) {
@@ -75,14 +74,9 @@ public class ListHelper {
 		return orderedList;
 	}
 	
-<<<<<<< HEAD
-=======
-
-
->>>>>>> p0intR-master
-	public String createNestedList(ArrayList<String> itemList, int i) {
-		return this.makeListNested(this.createUnOrderedList(itemList), i);
-	}
+//	public String createNestedList(ArrayList<String> itemList, int i) {
+//		return this.makeListNested(this.createUnOrderedList(itemList), i);
+//	}
 
 	public String createUnOrderedList(ArrayList<String> itemList) {
 		return this.buildList(itemList, "*");
@@ -96,16 +90,6 @@ public class ListHelper {
 		return this.buildList(itemList, "- [ ]");
 	}
 
-<<<<<<< HEAD
-	
-=======
-	public String makeListNested(String string, int i) {
-		if(i<0||string==null) throw new IllegalArgumentException();
-		String pad = i>0?String.format("%1$" + i*2 + "s", " "):"";
-		return pad+string.replaceAll("\n", "\n"+pad).trim()+"\n";
-	}
-
->>>>>>> p0intR-master
 	private String buildList(ArrayList<String> itemList, String bullet){
 		if(itemList==null) throw new IllegalArgumentException();
 		String result = "";
@@ -113,7 +97,4 @@ public class ListHelper {
 		return result;
 	}
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> p0intR-master

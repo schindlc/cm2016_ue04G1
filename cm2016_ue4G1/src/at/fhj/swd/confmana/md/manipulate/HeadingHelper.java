@@ -64,18 +64,14 @@ public class HeadingHelper {
 		this.text = Text;
 	}
 	
-	public String createHeader3(String Text)
-	{
-		if(Text == null || Text == "")
-			throw new IllegalArgumentException("No valid input");
-		else
-			return Text;
-	}
-<<<<<<< HEAD
-=======
-	
-	
->>>>>>> p0intR-master
+//	public String createHeader3(String Text)
+//	{
+//		if(Text == null || Text == "")
+//			throw new IllegalArgumentException("No valid input");
+//		else
+//			return Text;
+//	}
+
 
 	private static final String HEADER = "######";
 	
@@ -84,30 +80,8 @@ public class HeadingHelper {
 		return HEADER.substring(0, i)+(string.length()>0?" "+string.trim():"");
 	}
 
-<<<<<<< HEAD
-=======
-	public String createHeader1(String string) {
-		return this.createHeader(string, 1);
-	}
-
-	public String createHeader2(String string) {
-		return this.createHeader(string, 2);
-	}
-
 	public String createHeader3(String string) {
 		return this.createHeader(string, 3);
 	}
 
-	public String createHeader4(String string) {
-		return this.createHeader(string, 4);
-	}
-
-	public String createHeader5(String string) {
-		return this.createHeader(string, 5);
-	}
-
-	public String createHeader6(String string) {
-		return this.createHeader(string, 6);
-	}
->>>>>>> p0intR-master
 }
